@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% block title %}Arthur Siew - Cloud Engineer Portfolio{% endblock %}
+{% block content %}
+
+<style>
+h1 {
+  text-align: center;
+}
+
+    body {
+        background-color: #ffffff;
+        color: #000000;
+        font-family: Arial, sans-serif;
+    }
+
+    a {
+        color: blue;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    a:hover {
+        color: red; /* red on hover */
+    }
+
+    h2 {
+        margin-top: 20px;
+        font-size: 2rem;
+    }
+
+    .img-fluid {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .shadow-sm {
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .container {
+        padding: 30px 15px;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    @media (min-width: 768px) {
+        .col-md-6 {
+            flex: 0 0 48%;
+            max-width: 48%;
+        }
+    }
+</style>
+
+<div class="container">
+    <div class="row">
+        <!-- Title -->
+        <div class="col-md-12">
+            <h1 class="mb-3"><u>Hi, I am Arthur Siew</u></h1>
+        </div>
+
+        <!-- Profile Image -->
+        <div class="col-md-6">
+            <img src="{{ url_for('static', filename='images/home_page_profile.jpg') }}" alt="Arthur Siew" class="img-fluid rounded shadow-sm">
+        </div>
+
+        <!-- About Section -->
+        <div class="col-md-6">
+            <p>I am a passionate <strong>Cloud Engineer</strong> with <strong>full-stack development</strong> skills and a strong foundation in both front-end and back-end technologies. My journey into tech began with a background in digital marketing, specifically SEO, where I honed my problem-solving and technical thinking. Over time, I transitioned into software development and infrastructure engineering as I discovered the powerful role of cloud platforms and automation in delivering scalable, reliable systems.</p>
+            <p>With a solid grounding in <strong>HTML, CSS, JavaScript, and Python</strong>, I build modern web applications using frameworks like <strong>React</strong> for the front-end and <strong>Django</strong> and <strong>Flask</strong> for the back-end. I also manage deployments using tools like <strong>Docker</strong>, <strong>GitHub Actions</strong>, and cloud services such as <strong>Azure</strong>.</p>
+            <p>Currently, I’m advancing my skills at <strong>Lithan Academy</strong> through a Specialist Diploma in Software Engineering. My focus is on mastering <strong>Cloud Engineering</strong> and <strong>DevOps practices</strong>, including CI/CD pipelines, infrastructure-as-code, monitoring, and cost optimization.</p>
+            <p>My goal is to bridge the gap between software and infrastructure, building systems that are not only functional and secure but also scalable and cloud-optimized.</p>
+            <p>I am looking forward to landing my Cloud Engineer and DevOps role and continue to work on my coding skills and eventually, move onto a role in Cloud and Go Developer space.</p>
+            <p>If you'd like to connect, collaborate, or just say hi — feel free to <u><a href="mailto:arthur@sunburst.farm">email me</a></u>, or visit my <u><a href="https://www.linkedin.com/in/arthur-siew-ming-jiang/" target="_blank">LinkedIn</a></u> and <u><a href="https://github.com/asiewm01/" target="_blank">GitHub</a></u>.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% block title %}Arthur Siew - Cloud Engineer Portfolio{% endblock %}
+{% block content %}
+
+<style>
+    body {
+        background-color: #fff;
+        color: #000;
+        font-family: Arial, sans-serif;
+    }
+
+    main.container {
+        padding-top: 60px;
+    }
+
+    h2, h3 {
+        font-weight: bold;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    p {
+        max-width: 900px;
+        margin: 0 auto 20px auto;
+        font-size: 1.05rem;
+        line-height: 1.6;
+        text-align: center;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 40px 0;
+        justify-content: center;
+    }
+
+    ul li img {
+        height: 70px;
+    }
+
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 40px;
+        font-size: 0.95rem;
+    }
+
+    .table th,
+    .table td {
+        border: 1px solid black !important;
+        padding: 12px;
+        text-align: left;
+        vertical-align: top;
+    }
+
+    .table thead th {
+        background-color: #f8f8f8;
+        font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+        ul {
+            gap: 20px;
+        }
+
+        ul li img {
+            height: 60px;
+        }
+
+        p {
+            padding: 0 15px;
+        }
+    }
+</style>
+
+<main class="container py-5">
+    <h2>Skills</h2>
+    <p>
+        As a Cloud Engineer, my focus is on building and managing scalable cloud infrastructure using cutting-edge technologies and DevOps practices. I integrate front-end and back-end development with automation, CI/CD pipelines, containerization, and Infrastructure as Code.
+    </p>
+    <p>
+        I'm passionate about bridging the gap between software and infrastructure, currently expanding my stack into IoT and AI for smart aquaculture systems.
+    </p>
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray; width:100%">
+    <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Skills and Tech Stack</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Software Engineering</td>
+        <td>Proficient in building responsive web applications using HTML, CSS, and JavaScript. Skilled in both frontend and backend frameworks, with a strong foundation in Object-Oriented Programming (OOP), CRUD operations, SQL database design, RESTful API integration, and JSON-based data handling.</td>
+      </tr>
+      <tr>
+        <td>Cloud Engineering and DevOps</td>
+        <td>
+          Experienced with Microsoft Azure and modern DevOps practices, including continuous integration and delivery (CI/CD), shell scripting, containerization (e.g., Docker), and microservices architecture. Familiar with Git version control and Infrastructure as Code (IaC) tools such as Terraform or Azure Bicep.
+        </td>
+        </tr>
+      <tr>
+        <td>Test Analyst</td>
+        <td>
+          Hands-on experience in both automated and manual testing tools. Skilled in Pytest for backend logic testing, Selenium for UI testing, Jest for frontend unit testing, and Postman for API testing and validation. Capable of designing test plans, executing test cases, and contributing to quality assurance pipelines.
+        </td>
+    </tr>
+      <tr>
+        <td>Data Science and IoT</td>
+        <td>
+            Aspiring and Coming soon !
+        </td>
+      </tr>
+    </tbody>
+  </table>
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray; width:100%">
+    <h3>Software Engineering Stack</h3>
+    <ul>
+        <li><img src="static/images/html.jpg" alt="HTML"></li>
+        <li><img src="static/images/bootstrap.png" alt="Bootstrap"></li>
+        <li><img src="static/images/tailwind.png" alt="Tailwind"></li>
+        <li><img src="static/images/jquery.png" alt="JQuery"></li>
+        <li><img src="static/images/python.jpg" alt="Python"></li>
+        <li><img src="static/images/django.jpg" alt="Django"></li>
+        <li><img src="static/images/flask.png" alt="Flask"></li>
+        <li><img src="static/images/mysql.jpg" alt="MySQL"></li>
+        <li><img src="static/images/react.jpg" alt="React"></li>
+        <li><img src="static/images/node_js.jpg" alt="Node.js"></li>
+        <li><img src="static/images/generative_ai.jpg" alt="OpenAI"></li>
+        <li><img src="static/images/seo.png" alt="SEO"></li>
+    </ul>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Technology</th>
+                <th>Proficiency</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HTML5 and CSS3</td>
+                <td>Expert</td>
+                <td>Semantic, responsive web development with modern layout and accessibility standards.</td>
+            </tr>
+            <tr>
+                <td>JavaScript (ES6+)</td>
+                <td>Intermediate</td>
+                <td>Client-side interactivity, form validation, and async logic using vanilla JS and ES6+ features.</td>
+            </tr>
+            <tr>
+                <td>Bootstrap and Tailwind</td>
+                <td>Expert</td>
+                <td>Modular HTML and CSS architecture to build a responsive mobile-friendly user interface with Bootstrap. Tailwind CSS library to build responsive UI design</td>
+            </tr>
+            <tr>
+                <td>JQuery</td>
+                <td>Expert</td>
+                <td>Javascript library used to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animations, and Ajax.</td>
+            </tr>
+            <tr>
+                <td>React.js and Node.js</td>
+                <td>Intermediate</td>
+                <td>Building dynamic UIs with hooks, state management, and component-based architecture. Developing APIs and server-side logic with Express.js.</td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>Intermediate</td>
+                <td>OOP, scripting, automation, data parsing, and backend development.</td>
+            </tr>
+            <tr>
+                <td>Django and Flask</td>
+                <td>Expert</td>
+                <td>Full-stack development using Django ORM, templating, and admin interface. Building RESTful APIs and microservices with lightweight Flask applications.</td>
+            </tr>
+            <tr>
+                <td>MySQL</td>
+                <td>Intermediate</td>
+                <td>Writing SQL queries, joins, and database schema design for web apps.</td>
+            </tr>
+            <tr>
+                <td>RESTful APIs / JSON</td>
+                <td>Intermediate</td>
+                <td>Designing, testing, and consuming REST APIs with JSON payloads. Storing and transporting data to frontend with Json</td>
+            </tr>
+            <tr>
+                <td>SEO</td>
+                <td>Expert</td>
+                <td>Meta title and description optimisation. Keyword tools using Google Keyword planner along with content keyword and backlinks optimisation. Google Analytic and Spider</td>
+            </tr>
+            <tr>
+                <td>OpenAI</td>
+                <td>Basic</td>
+                <td>Experienced in building and integrating Generative AI features such as chatbots, sentiment analysis, and recommendation systems.</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray; width:100%">
+    <h3>Cloud Engineering & DevOps Stack</h3>
+    <ul>
+        <li><img src="static/images/docker.png" alt="Docker"></li>
+        <li><img src="static/images/kubernetes.png" alt="Kubernetes"></li>
+        <li><img src="static/images/terraform.png" alt="Terraform"></li>
+        <li><img src="static/images/linux.jpg" alt="Linux"></li>
+        <li><img src="static/images/bash_shell.png" alt="Shell_Bash"></li>
+        <li><img src="static/images/azure.jpg" alt="Azure"></li>
+        <li><img src="static/images/git.png" alt="Git"></li>
+        <li><img src="static/images/github.png" alt="Git"></li>
+        <li><img src="static/images/jenkins.png" alt="Jenkins"></li>
+        <li><img src="static/images/pythonanywhere.png" alt="PythonAnywhere"></li>
+        <li><img src="static/images/digital_ocean.png" alt="Digital_Ocean"></li>
+    </ul>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Technology</th>
+                <th>Proficiency</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Microsoft Azure</td>
+                <td>Basic</td>
+                <td>Deploying web apps, managing VMs, and using Azure CLI for automation.</td>
+            </tr>
+            <tr>
+                <td>Docker</td>
+                <td>Intermediate</td>
+                <td>Containerizing and deploying services with Docker and Docker Compose.</td>
+            </tr>
+            <tr>
+                <td>Kubernetes</td>
+                <td>Basic</td>
+                <td>Running, scaling, and managing container workloads in a cluster.</td>
+            </tr>
+            <tr>
+                <td>Terraform</td>
+                <td>Basic</td>
+                <td>Infrastructure as Code to provision cloud infrastructure declaratively.</td>
+            </tr>
+            <tr>
+                <td>Linux</td>
+                <td>Intermediate</td>
+                <td>Managing systems, users, permissions, and processes from the command line.</td>
+            </tr>
+            <tr>
+                <td>Shell/Bash</td>
+                <td>Intermediate</td>
+                <td>Automating routine tasks and deployments with scripts.</td>
+            </tr>
+            <tr>
+                <td>Jenkins</td>
+                <td>Learning</td>
+                <td>Implementing continuous integration and continuous delivery (CI/CD) workflows, automating tasks like building, testing, and deploying software.</td>
+            </tr>
+            <tr>
+                <td>Git & GitHub</td>
+                <td>Basic</td>
+                <td>Version control, pull requests, and team collaboration workflows.</td>
+            </tr>
+            <tr>
+                <td>PythonAnywhere</td>
+                <td>Intermediate</td>
+                <td>Deploying and hosting lightweight Python web apps in the cloud.</td>
+            </tr>
+            <tr>
+                <td>Digital Ocean</td>
+                <td>Basic</td>
+                <td>Deploy and host lightweight Python web apps and Flask projects in the cloud with simple droplet-based infrastructure.</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray; width:100%">
+    <h3>Test Analyst & Aspiring Stack</h3>
+    <ul>
+        <li><img src="static/images/rest_api.png" alt="RestfulAPI"></li>
+        <li><img src="static/images/json.png" alt="JSON"></li>
+        <li><img src="static/images/selenium.png" alt="Selenium"></li>
+        <li><img src="static/images/postman.png" alt="Postman"></li>
+        <li><img src="static/images/jest.png" alt="Jest"></li>
+        <li><img src="static/images/pytest.png" alt="PyTest"></li>
+        <li><img src="static/images/go.png" alt="GoLang"></li>
+        <li><img src="static/images/aws.png" alt="AWS"></li>
+        <li><img src="static/images/nosql.png" alt="NoSQL"></li>
+        <li><img src="static/images/raspberry_pi.png" alt="Raspberry"></li>
+        <li><img src="static/images/grafana.png" alt="Grafana"></li>
+        <li><img src="static/images/prometheus.jpg" alt="Prometheus"></li>
+    </ul>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Technology</th>
+                <th>Proficiency</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>RESTful APIs / JSON</td>
+                <td>Intermediate</td>
+                <td>Designing, testing, and consuming REST APIs with JSON payloads. Storing and transporting data to frontend with Json</td>
+            </tr>
+            <tr>
+                <td>Selenium</td>
+                <td>Basic</td>
+                <td>Automated browser testing and validation using Selenium WebDriver.</td>
+            </tr>
+            <tr>
+                <td>Postman</td>
+                <td>Intermediate</td>
+                <td>Testing and documenting REST APIs using collections and environments.</td>
+            </tr>
+            <tr>
+                <td>PyTest</td>
+                <td>Intermediate</td>
+                <td>Unit testing and functional testing in Python applications.</td>
+            </tr>
+            <tr>
+                <td>Jest</td>
+                <td>Basic</td>
+                <td>Facilitates writing and running tests for JavaScript code, particularly focusing on unit testing, component testing, and snapshot testing.</td>
+            </tr>
+            <tr>
+                <td>GoLang</td>
+                <td>Learning</td>
+                <td>Building performant microservices using Go’s concurrency and speed.</td>
+            </tr>
+            <tr>
+                <td>AWS</td>
+                <td>Learning</td>
+                <td>Exploring EC2, S3, IAM, and Lambda for scalable and cost-effective cloud solutions.</td>
+            </tr>
+            <tr>
+                <td>NoSQL (MongoDB)</td>
+                <td>Learning</td>
+                <td>Using document-based databases for unstructured and scalable data.</td>
+            </tr>
+            <tr>
+                <td>Grafana & Prometheus</td>
+                <td>Learning</td>
+                <td>Monitoring, Alert management and visualizing system metrics using Grafana dashboards, evolved for aquaculture to track oxygen, pH, salinity, and bioload in real time.</td>
+            </tr>
+            <tr>
+                <td>IoT & Raspberry Pi</td>
+                <td>Learning</td>
+                <td>Developing real-time aquaculture monitoring using sensors and embedded systems.</td>
+            </tr>
+        </tbody>
+    </table>
+</main>
+
+{% endblock %}

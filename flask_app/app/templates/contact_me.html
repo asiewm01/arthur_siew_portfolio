@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% block title %}Arthur Siew - Cloud Engineer Portfolio{% endblock %}
+
+{% block head %}
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Custom Inline Styles -->
+<style>
+    h2, h3 {
+        font-weight: bold;
+        color: #b30000;
+    }
+
+    .contact-form {
+        background-color: #fff;
+        border: 1px solid #dee2e6;
+        border-radius: 10px;
+        padding: 25px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .contact-info {
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: 10px;
+        padding: 25px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .contact-info a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    .contact-info a:hover {
+        text-decoration: underline;
+    }
+
+    .form-group label {
+        font-weight: 500;
+    }
+
+    .btn-danger {
+        background-color: #cc0000;
+        border-color: #cc0000;
+    }
+
+    .btn-danger:hover {
+        background-color: #a80000;
+        border-color: #a80000;
+    }
+
+    ul.list-unstyled li {
+        margin-bottom: 10px;
+        font-size: 1rem;
+    }
+
+    i.fab {
+        margin-right: 8px;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<main class="container py-5">
+    <h2><u>Contact Me</u></h2>
+    <p>
+        I'm always open to new opportunities, collaborations, or even just a friendly conversation about web development, technology, and other related fields.
+        If you have any questions or would like to discuss a project, feel free to reach out using the form or contact info below.
+    </p>
+
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <div class="contact-form">
+                <h3><u>Send a Message</u></h3>
+                <form>
+                    <div class="form-group mt-3">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-danger mt-3">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="col-md-6 mt-4 mt-md-0">
+            <div class="contact-info">
+                <h3><u>Contact Information</u></h3>
+                <ul class="list-unstyled mt-3">
+                    <li><strong>Email:</strong> <a href="mailto:arthur@sunburst.farm">arthur@sunburst.farm</a>, <a href="mailto:siewmj@gmail.com">siewmj@gmail.com</a></li>
+                    <li><strong>Phone:</strong> <a href="tel:+6592702017">Call me</a></li>
+                    <li><strong>WhatsApp:</strong> <a href="https://wa.me/6592702017" target="_blank">My WhatsApp Link</a></li>
+                    <li><strong>GitHub:</strong> <a href="https://github.com/asiewm01" target="_blank"><i class="fab fa-github" style="font-size:24px;color: black;"></i>My Github Account</a></li>
+                    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/arthur-siew-ming-jiang/" target="_blank"><i class="fab fa-linkedin" style="font-size:24px"></i>My LinkedIn Account</a></li>
+                </ul>
+                <p class="mt-3">
+                    Whether you have a question, a business proposal, or just want to chat, don’t hesitate to reach out. I look forward to hearing from you!
+                </p>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}
+

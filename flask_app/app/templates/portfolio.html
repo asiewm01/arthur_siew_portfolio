@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% block title %}Arthur Siew - Cloud Engineer Portfolio{% endblock %}
+{% block content %}
+<body>
+    <!-- Dynamic Header -->
+    <div id="header"></div>
+    
+    <!-- Dynamic Navigation -->
+    <div id="nav"></div>
+    
+    <!-- Main Content -->
+    <main class="container py-5">
+        <h2 class="text-center">Portfolio</h2>
+        <p class="text-center">
+            Here are some of the projects I've worked on. Click the links to learn more about each project and see the live demos or repositories.
+        </p>
+
+        <div class="row">
+            <!-- Silent Library Project -->
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <img src="static/images/silent_library.jpg" alt="Silent Library" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Silent Library</h5>
+                        <p class="card-text">During my time at Lithan Academy, I've been working on a project called Silent Library. Although I am not updating it just yet, it showcases the skills I've developed so far. I plan to update this project soon.</p>
+                        <a href="#" class="btn btn-primary" disabled>Coming Soon</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SEO Projects (Confidential) -->
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <img src="static/images/seo.jpg" alt="SEO Projects" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">SEO Projects</h5>
+                        <p class="card-text">I have previously worked on various SEO projects, helping businesses rank on the first page of search engines. These projects are confidential, but they reflect my ability to enhance online visibility and drive results for clients.</p>
+                        <a href="#" class="btn btn-secondary" disabled>Confidential</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}

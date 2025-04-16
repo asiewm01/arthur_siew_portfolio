@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Edit Comment{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h3>Edit Your Comment</h3>
+    <form method="POST">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+        <textarea name="comment" class="form-control" rows="4">{{ comment.content }}</textarea><br>
+        <button type="submit" class="btn btn-primary">Update</button>
+        <a href="{{ url_for('scratch.scratch') }}" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>
+{% endblock %}

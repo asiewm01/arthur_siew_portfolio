@@ -1,0 +1,35 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Environment variables / Secrets
+.env
+*.log
+
+# Editor/IDE files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Flask database migrations
+migrations/
+
+# SQLite DBs (optional, still good to ignore just in case)
+*.db
+*.sqlite3
+
+# OS & shell history
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# settings and config.py
+flask_app/settings.py

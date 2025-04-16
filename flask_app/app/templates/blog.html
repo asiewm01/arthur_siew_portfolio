@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% block title %}Arthur Siew - Cloud Engineer Portfolio{% endblock %}
+{% block content %}
+<body>
+    <!-- Dynamic Header -->
+    <div id="header"></div>
+    
+    <!-- Dynamic Navigation -->
+    <div id="nav"></div>
+    
+    <!-- Main Content -->
+    <main class="container py-5">
+        <h2 class="text-center">Blog</h2>
+        <p class="text-center">Explore my latest thoughts and writings. Stay tuned for more posts as I continue to share my experiences and knowledge in various fields.</p>
+        
+        <h3>Recent Blog Posts</h3>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="static/images/blog_image_placeholder.jpg" class="card-img-top" alt="Blog Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Blog Post Title</h5>
+                        <p class="card-text">This is a summary of the blog post content.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Dynamic Footer -->
+    <div id="footer"></div>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+{% endblock %}

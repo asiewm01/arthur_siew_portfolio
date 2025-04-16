@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+<style>
+    .dashboard-container {
+        max-width: 500px;
+        margin: 50px auto;
+        padding: 30px;
+        background: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .dashboard-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .dashboard-container input,
+    .dashboard-container textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+    }
+
+    .dashboard-container button {
+        width: 100%;
+        padding: 10px;
+        background-color: #0077cc;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        margin-top: 15px;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+
+    .dashboard-container button:hover {
+        background-color: #005fa3;
+    }
+
+    .dashboard-link {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 15px;
+        padding: 10px;
+        background-color: #28a745;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        font-size: 0.95rem;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+
+    .dashboard-link:hover {
+        background-color: #218838;
+    }
+
+    .admin-link {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .admin-link a {
+        color: #0077cc;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .admin-link a:hover {
+        text-decoration: underline;
+    }
+</style>
+
+<div class="dashboard-container">
+    <h2>Welcome, {{ user.get_full_name }}</h2>
+    <form method="POST">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+        
+        <label>First Name</label>
+        <input type="text" name="first_name" value="{{ user.first_name }}">
+
+        <label>Last Name</label>
+        <input type="text" name="last_name" value="{{ user.last_name }}">
+
+        <label>Username</label>
+        <input type="text" name="username" value="{{ user.username }}" required>
+
+        <label>Email</label>
+        <input type="email" name="email" value="{{ user.email }}">
+
+        <label>Phone</label>
+        <input type="text" name="phone" value="{{ profile.phone }}">
+
+        <label>Address</label>
+        <textarea name="address">{{ profile.address }}</textarea>
+
+        <button type="submit">Update Profile</button>
+    </form>
+
+    <a href="{{ url_for('auth.password_reset') }}" class="dashboard-link">Change Password</a>
+    {% endif %}
+</div>
+{% endblock %}
